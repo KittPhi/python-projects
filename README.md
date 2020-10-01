@@ -22,3 +22,12 @@ cd cython-example
 python setup.py build_ext --inplace
 
 ```
+## Why PyArmor
+> Due to the interpreted nature of Python, source code protection is a challenge.
+
+> PyArmor allows the obfuscation of Python code.
+
+```python
+python3 -m pip install pyarmor
+
+```
