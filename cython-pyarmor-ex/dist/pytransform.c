@@ -5,7 +5,7 @@
     "distutils": {
         "name": "pytransform",
         "sources": [
-            "C:\\Users\\kphi\\Repos\\dev-env-python\\cython-pyarmor-ex\\dist\\pytransform.py"
+            "/home/ecg/Repos/dev-env-python/cython-pyarmor-ex/dist/pytransform.py"
         ]
     },
     "module_name": "pytransform"
