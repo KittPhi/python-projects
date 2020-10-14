@@ -1,6 +1,7 @@
 def numPairsDivisibleBy60(self, time):
       ans = 0
       remainder = {}
+
       for i in time:
          if i % 60 == 0 and 0 in remainder:
             ans += remainder[0]
