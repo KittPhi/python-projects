@@ -1,6 +1,5 @@
-cpdef int test(int x):
-    cdef int y = 1
-    cdef int i
+def test(x):
+    y=1
     for i in range(1, x+1):
         y *= i
     return y
