@@ -90,7 +90,7 @@ python3.7 -m pip install git+https://git-codecommit.us-east-1.amazonaws.com/v1/r
 
 
 #########################################################################################
-# TEST 3: 
+# TEST 3 (SUCCESS): 
 cythonize -3 -k --lenient analyze_test.py && ls
 
 # Create .so file
