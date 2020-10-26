@@ -39,3 +39,39 @@ Hello World
 # Reset Folders to test again
 rm -rf pytransform.py _pytransform.so pytransform.cpython-37m-x86_64-linux-gnu.so foo.cpython-37m-x86_64-linux-gnu.so __pycache__ _pytransform.so && cd .. && rm -rf dist && ls
 ```
+
+
+
+> Tested (Works!): To see if pyarmor+cython works in venv. Still requires gcc to have python3.7
+```python
+# test if pyarmor+cython work in venv
+source ~/Repos/e-motion/src/py/venv/bin/activate
+
+$ python -V
+Python 3.7.9
+
+$ pip -V
+pip 9.0.1 from /home/ecg/Repos/e-motion/src/py/venv/lib/python3.7/site-packages (python 3.7)
+
+$ pip install cython pyarmor
+
+# Begin...
+pyarmor obfuscate --package-runtime 0 --no-cross-protection --restrict 0 foo.py
+
+cd dist && cythonize -3 -k --lenient foo.py pytransform.py
+
+gcc -shared $(python3.7-config --cflags) $(python3.7-config --ldflags) -o foo$(python3.7-config --extension-suffix) foo.c -fPIC
+
+gcc -shared $(python3.7-config --cflags) $(python3.7-config --ldflags) -o pytransform$(python3.7-config --extension-suffix) pytransform.c -fPIC
+
+cp ~/Repos/dev-env-python/pyarmor-cython-helloworld/tmp/test.py .
+
+# Need 4 dist files; relative to foo.py 
+mv pytransform.py _pytransform.so pytransform.cpython-37m-x86_64-linux-gnu.so foo.cpython-37m-x86_64-linux-gnu.so ~/Repos/dev-env-python/pyarmor-cython-helloworld/tmp && cd ../tmp
+
+# test
+python3.7 test.py
+
+# Reset Folders to test again
+rm -rf pytransform.py _pytransform.so pytransform.cpython-37m-x86_64-linux-gnu.so foo.cpython-37m-x86_64-linux-gnu.so __pycache__ _pytransform.so && cd .. && rm -rf dist && ls
+```
