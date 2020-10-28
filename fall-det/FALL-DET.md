@@ -128,8 +128,6 @@ UR Fall Detection Dataset:
 
 [CVonline: Image Databases](http://homepages.inf.ed.ac.uk/rbf/CVonline/Imagedbase.htm)
 
-Multicam Dataset:
-[9](http://www.iro.umontreal.ca/~labimage/Dataset/)
+[9](http://www.iro.umontreal.ca/~labimage/Dataset/)Multicam Dataset:
 
-DeepLens Fall Detection Project:
-[10](https://aws.amazon.com/blogs/publicsector/automating-fall-detection-with-aws-deeplens/)
+[10](https://aws.amazon.com/blogs/publicsector/automating-fall-detection-with-aws-deeplens/)DeepLens Fall Detection Project:
