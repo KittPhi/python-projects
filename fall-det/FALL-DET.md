@@ -25,20 +25,22 @@ To bring Fall detection to real world deployment:
 ## Fall Detection at the Edge
 
 Jetson TX2 Module: ($400)
-    Technical Specifications:
-    GPU: 256-core NVIDIA Pascal™ GPU architecture with 256 NVIDIA CUDA cores
-    CPU: Dual-Core NVIDIA Denver 2 64-Bit CPU
-    Quad-Core ARM® Cortex®-A57 MPCore
-    Memory: 8GB 128-bit LPDDR4 Memory
-    1866 MHx - 59.7 GB/s
-    Storage: 32GB eMMC 5.1
-    Power: 7.5W / 15W
+- Technical Specifications:
+- GPU: 256-core NVIDIA Pascal™ GPU architecture with 256 NVIDIA CUDA cores
+- CPU: Dual-Core NVIDIA Denver 2 64-Bit CPU
+- Quad-Core ARM® Cortex®-A57 MPCore
+- Memory: 8GB 128-bit LPDDR4 Memory
+- 1866 MHx - 59.7 GB/s
+- Storage: 32GB eMMC 5.1
+- Power: 7.5W / 15W
 
 Fall Detection at the Edge:
 [medium](https://medium.com/test-pub-zorian-yu/fall-detection-at-the-edge-c1a026c02318)
 
 [github](https://github.com/tyu0912/falling-net/)
+
 -------------------------------------------------------------------------------
+# Real-time Vision-based Fall Detection
 In the paper [20], researchers presented a real-time vision-based fall detection solution. The system captures temporal features using motion history images, that are used as input to a deep convolutional neural network. 
 
 Read Conclusion to this Paper and cite it for Thesis.
@@ -47,13 +49,17 @@ Read Conclusion to this Paper and cite it for Thesis.
 [20] http://www.diva-portal.org/smash/get/diva2:1254131/FULLTEXT01.pdf
 
 -------------------------------------------------------------------------------
-[10] Fall-Detection-PyTorch
-[10](https://medium.com/diving-in-deep/fall-detection-with-pytorch-b4f19be71e80)
+# Fall-Detection-PyTorch
 
-Research on Fall Datasets [1]
-- (FDD) Fall Detection Dataset [20]
 
-[20](http://le2i.cnrs.fr/Fall-detection-Dataset?lang=fr)
+[medium](https://medium.com/diving-in-deep/fall-detection-with-pytorch-b4f19be71e80)
+[github](https://github.com/nithiroj/Fall-Detection-PyTorch)
+[dataset](http://le2i.cnrs.fr/Fall-detection-Dataset?lang=fr)
+
+-------------------------------------------------------------------------------
+# SisFall: A fall and movement dataset
+Compares different 
+
 
 [1] SisFall: A fall and movement dataset
 Research on fall and movement detection with wearable devices has witnessed promising growth. However, there are few publicly available datasets, all recorded with smartphones, which are insufficient for testing new proposals due to their absence of objective population, lack of performed activities, and limited information.
@@ -86,10 +92,11 @@ old readme.md
 - Using Fall Detection Dataset (FDD) [8]
     - Consists of videos from a single camera in separate locations-Home, Coffee room, Office, and Lecture room. 
     - The frame rate is 25 frames/s and the resolution is 320x240 pixels.
-- repo [7]
 
 
 # (FDD) Fall Detection Dataset [8]
+Fall Detection Dataset: Feb. 27 2013
+[8](http://le2i.cnrs.fr/Fall-detection-Dataset)
 
 # (URFD) University of Rzeszow Fall Detection Dataset [11]
 - This dataset contains 70 (30 falls + 40 activities of daily living) sequences.
@@ -98,18 +105,11 @@ old readme.md
 - The dataset is organized as follows. Each row contains sequence of depth and RGB images for camera 0 and camera 1 (parallel to the floor and ceiling mounted, respectively), synchronization data, and raw accelerometer data. 
 - Each video stream is stored in separate zip archive in form of png image sequence. Depth data is stored in PNG16 format and should be rescaled
 
-# multicam dataset [9]
+# CVonline: Image Databases
+CVonline: Image Databases:
+http://homepages.inf.ed.ac.uk/rbf/CVonline/Imagedbase.htm
 
-CVonline: Image Databases
-
-[5](https://medium.com/diving-in-deep/fall-detection-with-pytorch-b4f19be71e80)
-[6]( Real-time Vision-based Fall Detection with Motion History Images and Convolutional Neural Networks, 2018, T. HARALDSSON)
-
-Fall Detection with PyTorch: April 30 2020
-[7](https://github.com/nithiroj/Fall-Detection-PyTorch)
-
-Fall Detection Dataset: Feb. 27 2013
-[8](http://le2i.cnrs.fr/Fall-detection-Dataset)
+[6](Real-time Vision-based Fall Detection with Motion History Images and Convolutional Neural Networks, 2018, T. HARALDSSON)
 
 Multicam Dataset:
 [9](http://www.iro.umontreal.ca/~labimage/Dataset/)
@@ -119,6 +119,3 @@ UR Fall Detection Dataset:
 
 DeepLens Fall Detection Project:
 [10](https://aws.amazon.com/blogs/publicsector/automating-fall-detection-with-aws-deeplens/)
-
-CVonline: Image Databases:
-http://homepages.inf.ed.ac.uk/rbf/CVonline/Imagedbase.htm
