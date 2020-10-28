@@ -79,3 +79,46 @@ git clone https://github.com/eromoe/test2
 git add test2/  
 git commit -am 'add files from test2 repo to test repo'  
 git push 
+--------------------------------------------------------------------------------
+old readme.md
+# Vision-based fall detection system [5], [6]
+- The objective is to build model which is able to detect falls from just a simple plain video.
+- Using Fall Detection Dataset (FDD) [8]
+    - Consists of videos from a single camera in separate locations-Home, Coffee room, Office, and Lecture room. 
+    - The frame rate is 25 frames/s and the resolution is 320x240 pixels.
+- repo [7]
+
+
+# (FDD) Fall Detection Dataset [8]
+
+# (URFD) University of Rzeszow Fall Detection Dataset [11]
+- This dataset contains 70 (30 falls + 40 activities of daily living) sequences.
+- Fall events are recorded with 2 Microsoft Kinect cameras and corresponding accelerometric data. 
+- ADL events are recorded with only one device (camera 0) and accelerometer. Sensor data was collected using PS Move (60Hz) and x-IMU (256Hz) devices.
+- The dataset is organized as follows. Each row contains sequence of depth and RGB images for camera 0 and camera 1 (parallel to the floor and ceiling mounted, respectively), synchronization data, and raw accelerometer data. 
+- Each video stream is stored in separate zip archive in form of png image sequence. Depth data is stored in PNG16 format and should be rescaled
+
+# multicam dataset [9]
+
+CVonline: Image Databases
+
+[5](https://medium.com/diving-in-deep/fall-detection-with-pytorch-b4f19be71e80)
+[6]( Real-time Vision-based Fall Detection with Motion History Images and Convolutional Neural Networks, 2018, T. HARALDSSON)
+
+Fall Detection with PyTorch: April 30 2020
+[7](https://github.com/nithiroj/Fall-Detection-PyTorch)
+
+Fall Detection Dataset: Feb. 27 2013
+[8](http://le2i.cnrs.fr/Fall-detection-Dataset)
+
+Multicam Dataset:
+[9](http://www.iro.umontreal.ca/~labimage/Dataset/)
+
+UR Fall Detection Dataset:
+[11](http://fenix.univ.rzeszow.pl/~mkepski/ds/uf.html)
+
+DeepLens Fall Detection Project:
+[10](https://aws.amazon.com/blogs/publicsector/automating-fall-detection-with-aws-deeplens/)
+
+CVonline: Image Databases:
+http://homepages.inf.ed.ac.uk/rbf/CVonline/Imagedbase.htm
