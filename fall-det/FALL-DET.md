@@ -86,6 +86,11 @@ git add test2/
 git commit -am 'add files from test2 repo to test repo'  
 git push 
 --------------------------------------------------------------------------------
+Vision-Based Fall Detection with Convolutional Neural Networks
+July 14 2017
+
+[article](https://www.hindawi.com/journals/wcmc/2017/9474806/)
+--------------------------------------------------------------------------------
 old readme.md
 # Vision-based fall detection system [5], [6]
 - The objective is to build model which is able to detect falls from just a simple plain video.
