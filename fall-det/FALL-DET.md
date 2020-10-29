@@ -1,6 +1,24 @@
-# end-to-end app to detect a fall, using different datasets and models
+# Senior Thesis: Vision-Based Fall Detection on IoT and offloading computation onto Super Computer.
+1. What image type to use as input?
+2. Which Image Dataset to use?
+3. (Server) Handles heavy computational Machine Learning Training
+    - what type of model?
+    - what type of input into CNN?
+    - what algorithms to process image?
+    - what type of output to send to (IoT)?
+    - hardware specs?
+4. (IoT) Handles video capture
+    - what type of model?
+    - what type of input?
+    - what type of output?
+    - hardware specs?
 
--------------------------------------------------------------------------------
+5. Best results for realtime fall detection?
+    - what type of data to use?
+    - what type of hardware?
+
+
+
 ## Fall-Detection-with-CNNs-and-Optical-Flow
 - Use Optical Flow Images (sequence of frames contains a person falling) as input to the CNN.
 - Evaluated across three datasets (URFD, FDD and Multicam), achieving state-of-the-art results.
@@ -12,14 +30,47 @@
 Figure 1: The system architecture or pipeline: the RGB images are converted to optical flow images, then features are extracted with a CNN, and a FC-NN decides whether there has been a fall or not.
 
 **THESIS RESEARCH**
-Vision-Based Fall Detection with Convolutional Neural Networks:
+
+6. Best results using just a camera?
+    - what type of data to use?
+    - what type of input?
+    - what is the output?
+    - what hardware?
+
+Previous approaches based on wearable sensors have provided high detection rates, however potential users are reluctant to wear such a device on an everyday basis, which in parrallel prevented them from becoming popularized. As a consequence, an alternative approach using vision-based methods, a IoT device with camera, has emerged. I believe that the driving reason which lead to the merger of Arm CPU and NVIDIA GPU was caused by the need for a better hardware needed for Internet of Things. They are forcasting that the sales of IoT would skyrocket, with it allowing homes to become smart environment through IoT devices becoming more affordable. Together with the increasing number of cameras in a home would allow an optimal environment for vision-based systems.
+
+In the 2017 publication "Vision-Based Fall Detection with Convolutional Neural Networks", the authors used a vision-based solution using Convolutional Neural Networks to detect if a sequence of frames contained a person failing.
+
+Summary of Application:
+A. Optical flow images as input into the CNN.
+    - Convolutional Neural Netowrks (CNN) was used for fall detection. More accurately, a CNN that learns how to detect falls from "optical flow iamges". 
+    - The CNN model is sequentially trained on different datasets.
+    - The purpose of using "optical flow images" as input to the network is to allow independence from environment features.
+    - The "optical flow images" only represent the motion of the consecutive video frames while ignoring any appearance related information such as color, brightness or contrast. Thus generally using a CNN approach to fall detection.
+B. Three-step training phase
+    1. Firstly, they train the model on the Imagenet dataset [] to acquire relevant features for image recognition.
+    2. Then by following the approach of [], they train the CNN on the UCF101 action dataset []. 
+       For that reason, the "optical flow images" of consecutive frames are calculated and then used to teach the network to detect the actions.
+    3. Finally, "transfer learning" is applied by reusing the network weights and fine-tunning the classification layers, so the network focuses on the binary problem of fall detection.
+C. Model is evaluated in three public image datasets
+    - At the time, this was the first time "transfer learning" was applied from the action recognition domain to fall detection. And because the public fall detection databases only contained small samples, it is crucial to use "transfer learning" to address that problem.
+D. Achieving state-of-the-art results on all three datasets. 
+
+
+
+# Vision-Based Fall Detection with Convolutional Neural Networks:
+
 [publication](https://www.hindawi.com/journals/wcmc/2017/9474806/)
 - Works only on camera images, using few image samples (10) to determine the occurrence of a fall.
+
 To bring Fall detection to real world deployment:
 - Further research on transfer learning with fall detection datasets is needed.
 - Using Optical Flow Images involves a heavy computational burden of processing consecutive images.
 
 [github](https://github.com/AdrianNunez/Fall-Detection-with-CNNs-and-Optical-Flow)
+
+-------------------------------------------------------------------------------
+# TODO: Performance Metric to detect a fall, using different datasets and models
 
 -------------------------------------------------------------------------------
 ## Fall Detection at the Edge
