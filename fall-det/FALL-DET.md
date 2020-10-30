@@ -1,4 +1,7 @@
 # Senior Thesis: Vision-Based Fall Detection on IoT and offloading computation onto Super Computer.
+> Goal is to create a vision-based fall detection methods (without accelerometers) onto an IoT device (low computation) and offload to super computer to do the heavy computation to create an affordable IoT, yet effective Fall Detection solution. 
+> Purely vision-based approaches focuses on the frames of video to detect a fall.
+
 1. What image type to use as input?
 2. Which Image Dataset to use?
 3. (Server) Handles heavy computational Machine Learning Training
@@ -16,8 +19,6 @@
 5. Best results for realtime fall detection?
     - what type of data to use?
     - what type of hardware?
-
-
 
 ## Fall-Detection-with-CNNs-and-Optical-Flow
 - Use Optical Flow Images (sequence of frames contains a person falling) as input to the CNN.
@@ -41,7 +42,7 @@ Previous approaches based on wearable sensors have provided high detection rates
 
 In the 2017 publication "Vision-Based Fall Detection with Convolutional Neural Networks", the authors used a vision-based solution using Convolutional Neural Networks to detect if a sequence of frames contained a person failing.
 
-Summary of Application:
+Summary of the paper "Vision-Based Fall Detection with Convolutional Neural Networks":
 A. Optical flow images as input into the CNN.
     - Convolutional Neural Netowrks (CNN) was used for fall detection. More accurately, a CNN that learns how to detect falls from "optical flow iamges". 
     - The CNN model is sequentially trained on different datasets.
@@ -56,7 +57,13 @@ C. Model is evaluated in three public image datasets
     - At the time, this was the first time "transfer learning" was applied from the action recognition domain to fall detection. And because the public fall detection databases only contained small samples, it is crucial to use "transfer learning" to address that problem.
 D. Achieving state-of-the-art results on all three datasets. 
 
+Sihouettes and Bounding Boxes:
+> Researches use meaningful features such as silhouettes, a popular strategy [b] or bounding boxes are extracted from the frames in order to facilitate detection. Notible solutions use those features as input into a classifier. (e.g., Gaussian Mixture Model (GMM), SVM, and MLP) to automatically detect if a fall has occurred.
+> A common technique to detect falls is to compute bounding boxes around objects to determine if  
 
+Tracking Systems:
+> The use of tracking systems was applied in many research in a close environment to detect falls [a].
+> Researchers used connected-components labeling to compute the silhouette of a person and extracting features such as the spatial orientation of the center of the silhouette or its geometric orientation. By combining this information, they are able to detect positions and also falls. [a]
 
 # Vision-Based Fall Detection with Convolutional Neural Networks:
 
@@ -69,6 +76,14 @@ To bring Fall detection to real world deployment:
 
 [github](https://github.com/AdrianNunez/Fall-Detection-with-CNNs-and-Optical-Flow)
 
+[a](T. Lee and A. Mihailidis, “An intelligent emergency response system: Preliminary development and testing of automated fall detection,” Journal of Telemedicine and Telecare, vol. 11, no. 4, pp. 194–198, 2005.
+[Google Scholar](https://scholar.google.com/scholar_lookup?title=An%20intelligent%20emergency%20response%20system:%20Preliminary%20development%20and%20testing%20of%20automated%20fall%20detection&author=T.%20Lee%20&author=A.%20Mihailidis&publication_year=2005)
+
+
+[b](C. Rougier, J. Meunier, A. St-Arnaud, and J. Rousseau, “Robust video surveillance for fall detection based on human shape deformation,” IEEE Transactions on Circuits and Systems for Video Technology, vol. 21, no. 5, pp. 611–622, 2011.
+[Google Scholar(https://scholar.google.com/scholar_lookup?title=Robust%20video%20surveillance%20for%20fall%20detection%20based%20on%20human%20shape%20deformation&author=C.%20Rougier&author=J.%20Meunier&author=A.%20St-Arnaud&author=&author=J.%20Rousseau&publication_year=2011)
+
+[c]()
 -------------------------------------------------------------------------------
 # TODO: Performance Metric to detect a fall, using different datasets and models
 
