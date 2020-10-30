@@ -72,7 +72,20 @@ Associated Tasks: Classification
 
 [dataset](https://archive.ics.uci.edu/ml/datasets/Simulated+Falls+and+Daily+Living+Activities+Data+Set#)
 -------------------------------------------------------------------------------
+## Fall Detection using Pose Estimation
+- used OpenPifPaf
+    - pip install openpifpaf
 
+Sept. 18 2020
+[article](https://towardsdatascience.com/fall-detection-using-pose-estimation-a8f7fd77081d)
+-------------------------------------------------------------------------------
+## A Real-Time Patient Monitoring Framework for Fall Detection
+- achieve 99% accuracy using wearable device.
+- Conclusion: They propose a framework that uses edge computing where instead of sending data to the cloud, wearable devices send data to a nearby edge device like a laptop or mobile device for real-time analysis.
+
+March 29 2019
+[publication](https://www.hindawi.com/journals/wcmc/2019/9507938/)
+-------------------------------------------------------------------------------
 ## cloning a repo inside a repo
 rm -rf test2  
 git clone https://github.com/eromoe/test2  
