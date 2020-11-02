@@ -83,7 +83,13 @@ To bring Fall detection to real world deployment:
 [b](C. Rougier, J. Meunier, A. St-Arnaud, and J. Rousseau, “Robust video surveillance for fall detection based on human shape deformation,” IEEE Transactions on Circuits and Systems for Video Technology, vol. 21, no. 5, pp. 611–622, 2011.
 [Google Scholar(https://scholar.google.com/scholar_lookup?title=Robust%20video%20surveillance%20for%20fall%20detection%20based%20on%20human%20shape%20deformation&author=C.%20Rougier&author=J.%20Meunier&author=A.%20St-Arnaud&author=&author=J.%20Rousseau&publication_year=2011)
 
-[c]()
+
+>>>>>>>>>>>>>>> Applying ...
+
+
+
+
+
 -------------------------------------------------------------------------------
 # TODO: Performance Metric to detect a fall, using different datasets and models
 
@@ -145,7 +151,6 @@ Abstract: 20 falls and 16 daily living activities were performed by 17 volunteer
 - Associated Tasks: Classification
 
 [dataset](https://archive.ics.uci.edu/ml/datasets/Simulated+Falls+and+Daily+Living+Activities+Data+Set#)
-<<<<<<< HEAD
 -------------------------------------------------------------------------------
 ## Fall Detection using Pose Estimation
 - used OpenPifPaf
@@ -160,9 +165,6 @@ Sept. 18 2020
 
 March 29 2019
 [publication](https://www.hindawi.com/journals/wcmc/2019/9507938/)
-=======
-
->>>>>>> 19c8bdac5400d5dca628a10dd0a150edf1c903c9
 -------------------------------------------------------------------------------
 ## cloning a repo inside a repo
 ```python
