@@ -3,22 +3,31 @@
 > Purely vision-based approaches focuses on the frames of video to detect a fall.
 
 1. What image type to use as input?
-2. Which Image Dataset to use?
+2. Which Image Dataset to use? ImageNet...
 3. (Server) Handles heavy computational Machine Learning Training
-    - what type of model?
-    - what type of input into CNN?
-    - what algorithms to process image?
-    - what type of output to send to (IoT)?
-    - hardware specs?
+    - what type of model? CNN
+    - what type of input into CNN? 10 temporal frames
+    - what algorithms to process image? MHI
+    - what features to send to GPU server?
+    - what type of output to send back to (IoT)?
+    - hardware specs for both?
 4. (IoT) Handles video capture
     - what type of model?
     - what type of input?
     - what type of output?
     - hardware specs?
-
+5. (GPU) Sever handles heavy computation:
+    - Training on what dataset?
+    - Training on how many datasets? 3
+    - Model Design? 
 5. Best results for realtime fall detection?
     - what type of data to use?
     - what type of hardware?
+6. Best results using just a camera?
+    - what type of data to use?
+    - what type of input?
+    - what is the output?
+    - what hardware?
 
 ## Fall-Detection-with-CNNs-and-Optical-Flow
 - Use Optical Flow Images (sequence of frames contains a person falling) as input to the CNN.
