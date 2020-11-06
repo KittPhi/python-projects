@@ -1,1 +1,3 @@
-from algorithms import STS_Numbered
+from algorithms import hello
+
+hello.hello_func()
