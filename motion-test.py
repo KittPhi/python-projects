@@ -1,3 +1,1 @@
-from algorithms import STS_Numbered.main
-
-main.get
+from algorithms import STS_Numbered
