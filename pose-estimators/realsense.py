@@ -41,7 +41,7 @@ def input_handler():
         pipe.start(config)
 
         try:
-            test_frame = pipe.try_wait_for_frames()
+            frame = pipe.try_wait_for_frames()
         except:
             pipe.stop()
             print_exc()
