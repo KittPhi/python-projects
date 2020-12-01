@@ -6,13 +6,15 @@ import pyrealsense2 as rs
 from traceback import print_exc
 from time import sleep, strftime
 
-def reset_camera(): # reset realsense camera
+
+def reset_camera():  # reset realsense camera
     dev = finddev(idVendor=0x8086)
     if dev:
         dev.reset()
         print('camera has been reset...')
     else:
         sys_exit("Error: No USB devices detected")
+
 
 def input_handler():
     # reset realsense camera
@@ -34,9 +36,9 @@ def input_handler():
 
         # enable new color and depth streams
         config.enable_stream(rs.stream.depth, image_width,
-                                image_height, rs.format.z16, 30)
+                             image_height, rs.format.z16, 30)
         config.enable_stream(rs.stream.color, image_width,
-                                image_height, rs.format.bgr8, 30)
+                             image_height, rs.format.bgr8, 30)
 
         pipe.start(config)
 

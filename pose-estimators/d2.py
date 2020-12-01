@@ -1,4 +1,4 @@
-from realsense import input_func, reset_camera
+from realsense import input_handler, reset_camera
 import argparse
 
 def d2_func(args):

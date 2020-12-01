@@ -4,6 +4,7 @@
 from usb.core import find as finddev
 from time import sleep
 import pyrealsense2 as rs
+
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from realsense import reset_camera
